@@ -1,0 +1,80 @@
+/* Main container - FULL WIDTH */
+/* .home {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */
+
+.home {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevents horizontal scroll */
+}
+
+/* Banner image */
+.home__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: -1;
+  margin-bottom: -50px;
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/* Product rows - GRID (fixes layout issues) */
+.home__row {
+  display: grid;
+
+  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+
+  /* spacing */
+  padding: 20px;
+  margin: 0 auto;
+
+  /* optional max width like Amazon */
+  /* max-width: 1500px;
+   */
+  max-width: none;
+}
+
+/* Optional: product card styling */
+.product {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Optional: make images fit nicely */
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* .home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.home__image {
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  margin-bottom: -50px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+} */
